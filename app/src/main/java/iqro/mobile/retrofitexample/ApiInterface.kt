@@ -27,4 +27,7 @@ interface ApiInterface {
     @DELETE("/api/users/{id}")
     suspend fun deleteUser(@Path("id") userId:Int):Response<Unit>
 
+    @DELETE
+    suspend fun deleteAllUsers()
+
 }
